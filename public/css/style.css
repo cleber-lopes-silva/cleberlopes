@@ -76,6 +76,8 @@ p{
     display: none;
   }
 
+
+
 @media (max-width: 768px){
     .block {
         width: calc(100%/2 - 20px);

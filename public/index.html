@@ -8,7 +8,6 @@
 	<!--style.perfil-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--style.header.css-->
-	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<!--font sociais-->
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -18,25 +17,26 @@
 
 
 <body>
-<!--imagem header-->
-<div class="header">
-<div class="portfolio">
-		<div class="colum">
-		  <img src="img/portfolio.png" alt="Snow" id="wc" style="width:100%">
-		</div>
+<!--header-->
+
+	<div class="top-container">
+        <h1>
+			CLEBER ARAÚJO
+		</h1>
+		<P id="wc3">ANALISTA DE TESTES / FRONT-END </P>
 	  </div>
-</div>
-<!--fim imagem header-->
-<!--Nav-->
-<div class="sidenav">
-	<a href="www.linkedin.com/in/cleber-lopes-da-silva-araújo-566799196"><i class="fa fa-linkedin-square"
+	  
+	  <div class="header" id="myHeader">
+	
+		<a href="www.linkedin.com/in/cleber-lopes-da-silva-araújo-566799196"><i class="fa fa-linkedin-square"
 			aria-hidden="true"></i></a>
 	<a href="https://github.com/cleber-lopes-silva"><i class="fa fa-github-square"
 			aria-hidden="true"></i></a>
 	<a href="https://www.facebook.com/cleber.araujo.980315"><i class="fa fa-facebook-square"
 			aria-hidden=""></i></a>
-	</a>
-</div>
+		
+	  </div>
+
 	  	<!--inicio doperfil-->
 		<main>
 			<div class="wrapper">
@@ -74,7 +74,21 @@
 		</div>
 	</div>
 </div>
-
+ <!--header function-->
+<script>
+	window.onscroll = function() {myFunction()};
+	
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+	
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+	  } else {
+		header.classList.remove("sticky");
+	  }
+	}
+	</script>
 
 </body>
 

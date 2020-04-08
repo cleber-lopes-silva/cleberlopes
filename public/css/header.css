@@ -1,27 +1,54 @@
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
 
-.portfolio {
-   
-   display: flex;
-   flex-wrap: wrap;
-   max-width: 900px;
-   width: 100%;
-   margin: 5px auto;
+.header {
+  padding: 10px 16px;
+  background: #555;
+  font-size: 36px;
+}
 
- }
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+a{
+  color: #e1e5ea;
+}
+
+
+H1{
+  font-size: 7VW;
+  color: rgba(18, 88, 168, 0.726);
+
+}
+
+#wc3{
+  font-size: 3vw;
+}
+
  
- .colum {
+
+@media (max-width: 425px){
   
-   width: calc(100%/1 - 20px);
-   margin: 10px;
-   border: 1px solid #ccc;
-   box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2);
-   display: flex;
-   flex-direction: column;
- }
-
-
- 
-
-
+  .header {
+   
+    font-size: 30px;
+    text-align: center;
+   
+  }
+}
   
   
